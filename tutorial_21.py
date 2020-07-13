@@ -5,7 +5,6 @@
 # print("C")
 # print("D")
 
-
 # Inoffiziell wird oftmals auch diese Schreibweise verwendet. 
 # *** Achtung: Diese Schreibweise sollte man allerdings nicht benutzen, da es sich nicht um wirkliche Kommentare handelt, sondern um zweckentfremdete Strings. ***
 
