@@ -1,4 +1,4 @@
-# Das ist der schöne Weg, mehrzeilig auszukommentieren. 
+# Das ist der einzige offizielle Weg, zu kommentieren. 
 
 # print("A")
 # print("B")
@@ -6,7 +6,8 @@
 # print("D")
 
 
-# Inoffiziell wird oftmals auch diese Schreibweise verwendet. Sollte man allerdings nicht tun, da es sich nicht um wirkliche Kommentare handelt, sondern um zweckentfremdete Strings.
+# Inoffiziell wird oftmals auch diese Schreibweise verwendet. 
+# *** Achtung: Diese Schreibweise sollte man allerdings nicht benutzen, da es sich nicht um wirkliche Kommentare handelt, sondern um zweckentfremdete Strings. ***
 
 '''
 print("A")
