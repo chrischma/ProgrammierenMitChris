@@ -8,4 +8,3 @@ for _ in range(laenge):
 	pw = pw+secrets.choice(zeichen)
 
 print(pw)
-
