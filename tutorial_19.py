@@ -1,4 +1,3 @@
-
 farbe = "gelbe"
 name = "Alfred"
 
