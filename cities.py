@@ -2,8 +2,8 @@
 
 import csv
 
-with open('worldcities.csv', newline='') as csvfile:              
-    csv_reader = csv.DictReader(csvfile, delimiter=',')           
+f = open('worldcities.csv', newline='')
+cities_csv = csv.DictReader(f, delimiter=',')
 
-    for item in csv_reader:
-        print(item["country"], item["population"])
+for item in cities_csv:
+    print(item['city'], item['population'])
