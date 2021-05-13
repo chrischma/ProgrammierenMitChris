@@ -1,7 +1,5 @@
 # Wir legen zuvor eine Datei namens mein_modul.py an.
-
 # Diese enthält unsere Funktion:
-
 # def say_hello():
 # 	print("Hello hello!")
 
