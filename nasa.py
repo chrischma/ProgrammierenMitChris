@@ -9,7 +9,6 @@ events_data = r.json()
 event_list = events_data['events']
 
 for event in event_list:
-		# print(event)
     if 'fire' in str(event['categories']):
         print(event['title'])
       
