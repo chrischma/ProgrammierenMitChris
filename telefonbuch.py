@@ -1,12 +1,7 @@
 import tkinter as tk
 
-window = tk.Tk()
-window.title('Mein Telefonbuch')
-window.geometry('300x300')
-window.config(bg="lightblue")
-
-numbers_label = tk.Label(text='Hallo!')
-numbers_label.config(font=("Arial", 20, "bold"), bg="lightblue")
+contact_names = ['Oma Frieda', 'Heinz', 'Lotte']
+contact_numbers = ['8482938', '+49 174923857', '11833']
 
 
 def display_number_for_contact():
@@ -14,9 +9,14 @@ def display_number_for_contact():
     phone_number_of_contact = contact_numbers[selection_index]
     numbers_label['text'] = phone_number_of_contact
 
-    
-contact_names = ['Oma Frieda', 'Heinz', 'Lotte']
-contact_numbers = ['8482938', '+49 174923857', '11833']
+
+window = tk.Tk()
+window.title('Mein Telefonbuch')
+window.geometry('300x300')
+window.config(bg="lightblue")
+
+numbers_label = tk.Label(text='Hallo!')
+numbers_label.config(font=("Arial", 20, "bold"), bg="lightblue")
 
 contact_names_var = tk.StringVar(value=contact_names)
 contact_listbox = tk.Listbox(window, height=10, listvariable=contact_names_var)
