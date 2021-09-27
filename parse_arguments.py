@@ -4,7 +4,6 @@ import argparse
 def greeting(args):
     if args.name:
         print(f'Hallo {args.name}!')
-
     else:
         print('Hallo unbekannter Freund!')
 
