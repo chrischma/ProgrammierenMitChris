@@ -5,7 +5,7 @@ def greeting(args):
     if args.name:
         print(f'Hallo {args.name}!')
     else:
-        print('Hallo unbekannter Freund!')
+        print('Es wurde kein Name eingegeben.')
 
 
 def main():
