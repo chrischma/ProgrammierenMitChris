@@ -3,12 +3,12 @@ import simpleaudio
 from time import sleep
 
 
-goal_rate = 65000
+goal_rate = 65000 
 
 
 def get_current_rate():
     url = 'https://rest.coinapi.io/v1/exchangerate/BTC/USD'
-    headers = {'X-CoinAPI-Key' : '_____________________________'}
+    headers = {'X-CoinAPI-Key' : 'YOUR API KEY'}
     response = requests.get(url, headers=headers)
 
     current_rate = response.json()['rate']
