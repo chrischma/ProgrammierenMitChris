@@ -1,19 +1,18 @@
-import pyautogui
+from pyautogui import click, position
+
+x = 260
+y = 408
+
 
 def print_position():
-    '''infinite function that prints x and y of the current cursor position'''
     while True:
-        print(pyautogui.position())
+        print(position())
 
 
-
-def click_button():
-    '''
-    is used to click a certain position 50 times
-    (in this example: a useless button on theuselessbutton.com)
-    '''
+def click_button(x, y):
     for i in range(50):
-        pyautogui.click(260, 408)
+        click(x, y)
+        print(f'click {i}')
 
 
-click_button()
+click_button(x, y)
