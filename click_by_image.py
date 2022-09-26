@@ -1,22 +1,20 @@
-# pip install opencv-python
-# pip install pyautogui
-# Berechtigungen erteilen
-
 import pyautogui
 
-img = 'button.png'
-button = pyautogui.locateCenterOnScreen(img, confidence=0.99)
 
-
-def click_button(button):
-    if not button:
-        return 
-
+def click_button(image, scaling):
     for i in range(10):
-        pyautogui.click(button.x/2, button.y/2)
-        print('click', i)
+        position = pyautogui.locateCenterOnScreen(
+            image, 
+            confidence=0.90)
+
+        if position:
+            x, y = position
+            x *= scaling 
+            y *= scaling
+
+            pyautogui.click(x, y)
 
 
-click_button(button)
-
-
+scaling = 0.5     
+image = 'button.png' 
+click_button(image, scaling)
