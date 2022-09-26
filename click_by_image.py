@@ -1,11 +1,10 @@
-import pyautogui
+from pyautogui import locateCenterOnScreen, click
 
 
 def click_button(image, scaling):
     for i in range(10):
-        position = pyautogui.locateCenterOnScreen(image, confidence=0.90)
+        position = locateCenterOnScreen(image, confidence=0.90)
 
-        # when nothing is found, we try again...
         if not position:
             continue
         
@@ -13,7 +12,7 @@ def click_button(image, scaling):
         x *= scaling 
         y *= scaling
 
-        pyautogui.click(x, y)
+        click(x, y)
 
 
 scaling = 0.5     
