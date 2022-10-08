@@ -7,8 +7,7 @@ from pyautogui import write, press, hotkey, click
 from time import sleep
 
 
-def fill_form(name):
-    first_name, last_name = name.split(' ')
+def fill_form(first_name, last_name):
     click(516, 373, clicks=3)
     sleep(1)
     
@@ -25,7 +24,9 @@ def fill_form(name):
     sleep(1)
 
 
-persons = ['Bernd Stromberg', 'Ulf Steinke', 'Berthold Heisterkamp']
+# Example data
+names = ['Bernd Stromberg', 'Ulf Steinke', 'Berthold Heisterkamp']
 
-for person in persons:
-    fill_form(person)
+for name in names:
+    first_name, last_name = name.split(' ')
+    fill_form(first_name, last_name)
